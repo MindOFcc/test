@@ -1,0 +1,9 @@
+FROM alpine:3.14
+RUN apk add --no-cache mysql-client
+RUN apk update -y
+RUN apk upgrade -y
+RUN apk add nginx -y
+RUN apk add mysql -y
+RUN apk add tomcat-main-server -y
+EXPOSE 10-8000
+ENTRYPOINT ["mysql"]

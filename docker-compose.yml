@@ -1,0 +1,6 @@
+version: "2.4"
+services:
+    main:
+        image: main-image
+        ports:
+            - "20-2000:20-2000"
